@@ -1,0 +1,146 @@
+/* Admin Dashboard Base Styling */
+.admin-dashboard {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Logo */
+.logo-img {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+/* Sidebar */
+.sidebar {
+  min-width: 250px;
+}
+
+/* Navigation Links */
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Tailwind: gap-3 */
+  padding: 0.5rem 0.75rem; /* Tailwind: py-2 px-3 */
+  border-radius: 0.5rem; /* Tailwind: rounded-lg */
+  transition: background-color 0.2s;
+  color: #6b7280; /* text-gray-500 */
+}
+
+.nav-link:hover {
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+.nav-link.active {
+  background-color: #d1fae5; /* bg-green-100 */
+  color: #16a34a; /* text-green-600 */
+  font-weight: 600;
+}
+
+.new-post-btn {
+  background-color: #16a34a; /* bg-green-600 */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.new-post-btn:hover {
+  background-color: #15803d; /* bg-green-700 */
+}
+
+/* Top Navbar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  border-radius: 0.5rem; /* rounded-lg */
+  width: 200px;
+  background-color: #fff; /* bg-white */
+  color: #111827; /* text-gray-900 */
+}
+
+.notification-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #6b7280; /* text-gray-500 */
+  transition: color 0.2s;
+}
+
+.notification-btn:hover {
+  color: #16a34a; /* text-green-600 */
+}
+
+/* Stats Cards */
+.stat-card {
+  background-color: #fff; /* bg-white */
+  padding: 1.5rem;
+  border-radius: 0.75rem; /* rounded-xl */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* shadow-sm */
+}
+
+.stat-card p:first-child {
+  font-size: 0.875rem; /* text-sm */
+  color: #6b7280; /* text-gray-500 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.stat-number {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  color: #111827; /* text-gray-900 */
+  margin-bottom: 0.25rem; /* mb-1 */
+}
+
+.stat-change {
+  color: #16a34a; /* text-green-600 */
+  font-weight: 500;
+  font-size: 0.875rem; /* text-sm */
+}
+
+/* Table */
+.table-title {
+  font-weight: 700;
+  font-size: 1.25rem; /* text-xl */
+  color: #111827; /* text-gray-900 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.market-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.market-table th,
+.market-table td {
+  padding: 0.75rem 1.5rem; /* px-6 py-3 */
+}
+
+.market-table thead th {
+  font-weight: 600;
+  color: #6b7280; /* text-gray-500 */
+  text-align: left;
+}
+
+.market-table tbody tr:hover {
+  background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+.edit-btn {
+  color: #16a34a; /* text-green-600 */
+  font-size: 0.875rem; /* text-sm */
+  cursor: pointer;
+}
+
+.delete-btn {
+  color: #ef4444; /* text-red-500 */
+  font-size: 0.875rem;
+  cursor: pointer;
+}

@@ -1,0 +1,109 @@
+.nav-link {
+  color: var(--text-secondary-light);
+  transition: color 0.2s ease;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+.nav-link-active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  transition: 0.2s ease;
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+.btn-outline {
+  background-color: rgba(52, 110, 74, 0.1);
+  color: var(--primary);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: 0.2s ease;
+}
+.btn-outline:hover {
+  background-color: rgba(52, 110, 74, 0.2);
+}
+
+.sidebar-card {
+  background-color: var(--surface-light);
+  border: 1px solid var(--border-light);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.sidebar-heading {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.tag {
+  background-color: rgba(52, 110, 74, 0.15);
+  color: var(--primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.community-dashboard {
+  /* Applying default text colors for light/dark mode */
+  @apply text-text-light-primary dark:text-text-dark-primary;
+}
+
+/* Navbar Links */
+.nav-link {
+  @apply text-text-light-secondary dark:text-text-dark-secondary transition-colors duration-200;
+}
+.nav-link:hover {
+  @apply text-primary dark:text-primary-dark;
+}
+.nav-link-active {
+  @apply text-primary dark:text-primary-dark font-bold;
+}
+
+/* Primary Button */
+.btn-primary {
+  @apply bg-primary text-white font-semibold rounded-lg py-3 px-4 transition-colors duration-200;
+}
+.btn-primary:hover {
+  @apply bg-primary-dark;
+}
+
+/* Outline Button */
+.btn-outline {
+  @apply bg-primary/10 text-primary dark:bg-primary-dark/20 dark:text-primary-dark font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+}
+.btn-outline:hover {
+  @apply bg-primary/20 dark:bg-primary-dark/30;
+}
+
+/* Sidebar Card */
+.sidebar-card {
+  @apply bg-surface-light dark:bg-surface-dark border border-border-light dark:border-border-dark rounded-xl p-4;
+}
+.sidebar-heading {
+  @apply font-bold text-lg mb-3 text-text-light-primary dark:text-text-dark-primary;
+}
+
+/* Tag */
+.tag {
+  @apply bg-primary/15 text-primary dark:bg-primary-dark/20 dark:text-primary-dark px-3 py-1 rounded-full text-xs font-medium;
+}
+
+/* General form input styling if needed, though Tailwind's default is good */
+.form-input {
+  @apply text-text-light-primary dark:text-text-dark-primary placeholder-text-light-secondary dark:placeholder-text-dark-secondary;
+}
+
+/* Additional utility for avatar image sizes if not handled by size-10 */
+.size-10 {
+  width: 40px;
+  height: 40px;
+}
