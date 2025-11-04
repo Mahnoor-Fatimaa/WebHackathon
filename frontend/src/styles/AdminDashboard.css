@@ -1,0 +1,84 @@
+/* Basic Styling for Admin Dashboard */
+
+.admin-dashboard {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  min-width: 250px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+
+.nav-link.active {
+  background-color: rgba(42, 91, 61, 0.1);
+  color: #2a5b3d;
+}
+
+.new-post-btn {
+  background-color: #2a5b3d;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+/* Top Navbar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.25rem;
+  width: 200px;
+}
+
+.notification-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Stats Cards */
+.stat-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e5e5;
+}
+
+.stat-number {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.stat-change {
+  color: green;
+  font-weight: 500;
+}
+
+/* Table */
+.table-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.edit-btn {
+  color: #2a5b3d;
+}
+
+.delete-btn {
+  color: red;
+}
